@@ -1,0 +1,73 @@
+section {
+
+    padding-top: 50px;
+    display: block;
+  
+}
+
+#about-me {
+
+    width: 100%;
+    background-color: #ffc7e2;
+
+}
+
+/* centering both containers of about me section */
+#about-me div {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+/* create space between hero image & about me first container */
+/* #about-me-div1 {
+
+    padding-top: 100px;
+
+} */
+
+/* style of about me heading */
+#about-me-div1 h1 {
+
+    font-size: 48px;
+    color: #194f96;
+
+}
+
+/* create space between about me heading & image */
+#about-me-div1 img {
+
+    padding-top: 40px;
+
+}
+
+/* making image round & creating a box shadow underneath */
+#about-me img {
+
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    filter: drop-shadow(30px 30px 60px rgba(0,0,0,.8));
+    -webkit-filter: drop-shadow(30px 30px 60px rgba(0,0,0,.8));
+
+}
+
+/* image grows on hover */
+#about-me img:hover {
+
+    transform: scale(1.1);
+
+}
+
+/* style & spacing of paragraphs within sectond about me container */
+#about-me-div2 {
+
+    padding-top: 55px;
+    color: #194f96;
+    font-size: 20px;
+    width: 80%;
+    text-align: justify;
+    padding-bottom: 100px;
+
+}
