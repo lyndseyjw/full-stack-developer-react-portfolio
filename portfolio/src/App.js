@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
-import Work from './pages/Work';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import NavTabs from './components/NavTabs';
 import Footer from './components/Footer';
@@ -17,8 +17,8 @@ function App() {
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Work') {
-      return <Work />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
     return <Contact />;
   };

@@ -13,7 +13,9 @@ header {
     opacity: 0.7;
     position: absolute;
     width: 100%;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -24,12 +26,14 @@ header h1 {
     margin-left: 50px;
     opacity: 1;
     font-weight: bold;
-
+    align-self: center;
+    margin-bottom: -1px;
 }
 
 header nav {
 
     float: right;
+    align-self: center;
 
 }
 
