@@ -26,44 +26,12 @@ section {
     line-height: 50px;
     margin-left: 50px;
     flex: 1;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
     text-align: center;
 
 }
 
-/* spacing of contact navigation bar */
-#contact nav {
-
-    padding-top: 15px;
-    flex: 1;
-    text-align: center;
-
-}
-
-/* style & spacing of unordered list in navigation bar */
-#contact nav ul {
-
-    list-style-type: none;
-    line-height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-/* styling of links contained within list item */
-#contact nav a {
-
-    text-decoration: none;
-    color: #0c4107;
-    font-size: 20px;
-    margin: 30px;
-
-}
-
-/* contacts change color when user hovers over */
-#contact a:hover, #number:hover {
-
-    color: white;
-
+.smallerContainer {
+    width: 60%;
+    margin: auto;
 }
