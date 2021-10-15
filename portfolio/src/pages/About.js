@@ -8,7 +8,7 @@ export default function About() {
 
             <div id="about-me-div1">
 
-                <h1>ABOUT ME</h1>
+                {/* <h1>ABOUT ME</h1> */}
 
                 <img src={aboutMePhoto} alt="Lyndsey at the beach"/>
             </div>
