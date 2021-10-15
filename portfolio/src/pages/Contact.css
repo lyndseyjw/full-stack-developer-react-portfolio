@@ -2,7 +2,6 @@ section {
 
     padding-top: 400px;
     display: block;
-  
 }
 
 #contact {
@@ -15,8 +14,7 @@ section {
     padding-bottom: 100px;
     padding-right: 30px;
     width: 100%;
-    height: 100vh;
-
+    height: 115vh;
 }
 
 /* style & spacing of contact heading */
@@ -34,4 +32,9 @@ section {
 .smallerContainer {
     width: 60%;
     margin: auto;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 40px;
 }
