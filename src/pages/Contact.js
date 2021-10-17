@@ -3,14 +3,13 @@ import './Contact.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-export default function Contact() {
+export default function Contact({ onPageChange }) {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
 
     const [validated, setValidated] = useState(false);
-    const [message, setMessage] = useState(false);
 
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
@@ -35,12 +34,11 @@ export default function Contact() {
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
-        } 
-        event.preventDefault();
-        setMessage(true);
-        setName('');
-        setEmail('');
-        setContent('');
+        } else {
+
+            event.preventDefault();
+            onPageChange("Home")
+        }
         setValidated(true);
     };
 
@@ -91,7 +89,6 @@ export default function Contact() {
                     Submit
                 </Button>
             </Form>
-            <p>{message ? 'Connection Made!' : ''}</p>
 
         </section>
     )

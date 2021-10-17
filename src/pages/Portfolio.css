@@ -64,6 +64,7 @@
 
 .image-container:hover .image-caption{
     opacity:1;
+    cursor: default;
 }
 
 .flex {

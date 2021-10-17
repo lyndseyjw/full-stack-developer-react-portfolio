@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
 
+
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;
@@ -20,7 +21,7 @@ function App() {
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }
-    return <Contact />;
+    return <Contact onPageChange={handlePageChange}/>;
   };
   
   const handlePageChange = (page) => setCurrentPage(page);
