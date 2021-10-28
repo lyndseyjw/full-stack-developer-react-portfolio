@@ -15,7 +15,7 @@ section {
 /* centering both containers of about me section */
 #about-me div {
 
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 
 }
@@ -23,27 +23,19 @@ section {
 /* create space between hero image & about me first container */
 /* #about-me-div1 {
 
-    padding-top: 100px;
+    padding-top: 150px;
 
 } */
 
-/* style of about me heading */
-#about-me-div1 h1 {
-
-    font-size: 48px;
-    color: #194f96;
-
-}
-
 /* create space between about me heading & image */
-#about-me-div1 img {
+.beach {
 
     padding-top: 40px;
 
 }
 
 /* making image round & creating a box shadow underneath */
-#about-me img {
+.beach {
 
     width: 300px;
     height: auto;
@@ -54,7 +46,7 @@ section {
 }
 
 /* image grows on hover */
-#about-me img:hover {
+.beach:hover {
 
     transform: scale(1.1);
 
@@ -71,3 +63,71 @@ section {
     padding-bottom: 100px;
 
 }
+
+.box-shadow {
+    padding: 20px;
+    box-shadow: 30px 20px 60px rgba(0,0,0,.8);
+    border-radius: 9px;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+.award {
+    list-style-type: '\2605';
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.tech {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.tech:hover {
+    background-color: lightgray;
+    box-shadow: 5px 5px 40px rgba(0,0,0,.8);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.between {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.transition {
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+}
+
+.margin-left {
+    margin-left: 40px;
+}
+
+.image {
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+/* .black {
+    color: black;
+} */

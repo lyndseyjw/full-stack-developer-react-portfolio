@@ -64,7 +64,6 @@
 
 .image-container:hover .image-caption{
     opacity:1;
-    cursor: default;
 }
 
 .flex {
@@ -74,4 +73,19 @@
 
 .margin-left {
     margin-left: 10px;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+.black {
+    color: black;
+    font-size: 30px;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
+
+.black:hover {
+    opacity: 1;
 }

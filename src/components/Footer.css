@@ -20,4 +20,9 @@
 .font-size {
     font-size: 38px;
     color: white;
+    opacity: 0.6;
+}
+
+.font-size:hover {
+    opacity: 1;
 }
