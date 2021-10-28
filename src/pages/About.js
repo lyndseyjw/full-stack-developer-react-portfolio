@@ -68,7 +68,7 @@ export default function About() {
                 </div>
                 <p className="margin-top">
                     In 12 weeks, successfully created 3 major web applications, with a group, and 22 Github repositories + deployed applications, individually. 
-                    Quickly integrated a full stack skill set with an exemplary understanding of Javascript / React, Express and Mongoose. 
+                    Quickly integrated a full stack skill set with an exemplary understanding of Javascript / React, GraphQL, and Mongoose / MongoDB. 
                     Eager to apply my new skills in web development with a courageous group of individuals willing to break unprecedented ground in what technology could offer, if the right intentions were present, I am committed to a life of learning and will always provide ideas and work of the highest caliber.
 
                 </p>
