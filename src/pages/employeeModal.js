@@ -18,8 +18,11 @@ export default function employeeModal({ onHide, show }) {
                 <h4>Languages and Technologies</h4>
                 <p className="padding-top">Javascript, Node, Inquirer, Sequelize, mySQL </p>
                 <div className="flex">
+                <a href="https://drive.google.com/file/d/1Y8xz6AzSLeE4SS89jjYlznI2y-PvsYNw/view?usp=sharing" target="_blank" rel="noopener noreferrer" >
+                        <i className="fa black">&#xf109;</i>
+                    </a>
                     <a href="https://github.com/lyndseyjw/employee-tracker-database" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-github black"></i>
+                        <i className="fa fa-github margin-left black"></i>
                     </a>
                 </div>
             </Modal.Body>

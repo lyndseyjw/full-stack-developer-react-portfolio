@@ -89,7 +89,12 @@ export default function Contact({ onPageChange }) {
                     Submit
                 </Button>
             </Form>
-
+            <div className='center padding-top'>
+                <a href="mailto:lyndseyjwatson@gmail.com">lyndseyjwatson@gmail.com</a>
+            </div>
+            <div className='center padding-top margin-bottom'>
+                <a id="number" href="#contact">(832) 687-2196</a>
+            </div>
         </section>
     )
 }
