@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Contact.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import emailjs from 'emailjs-com';
 
 export default function Contact({ onPageChange }) {
 
@@ -16,30 +17,39 @@ export default function Contact({ onPageChange }) {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
-    
+
         // Based on the input type, we set the state of either email, username, and password
         if (inputType === 'name') {
-          setName(inputValue);
+            setName(inputValue);
         } else if (inputType === 'email') {
-          setEmail(inputValue);
+            setEmail(inputValue);
         } else {
-          setContent(inputValue);
+            setContent(inputValue);
         }
     };
 
-    const handleSubmit = (event) => {
+    const form = useRef();
 
-        const form = event.currentTarget;
+    const sendEmail = (e) => {
+
+        const form = e.currentTarget;
 
         if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
+            e.preventDefault();
+            e.stopPropagation();
         } else {
+        
+            emailjs.sendForm('service_g7oc67p', 'template_bxsaoon', form.current, 'user_o4QGNHNr4dPElGw0IgZAC')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
-            event.preventDefault();
+            e.preventDefault();
             onPageChange("Home")
         }
-        setValidated(true);
+        setValidated(true);  
     };
 
     return (
@@ -47,9 +57,9 @@ export default function Contact({ onPageChange }) {
 
             <h1> Let's Work Together! </h1>
 
-            <Form noValidate validated={validated} onSubmit={handleSubmit} className="smallerContainer">
+            <Form noValidate validated={validated} ref={form} onSubmit={sendEmail} className="smallerContainer" id="contact-form">
                 <Form.Group className="mb-3" controlId="validationCustom01">
-                    <Form.Label>Your Name</Form.Label>
+                    <Form.Label>Your Name / Company</Form.Label>
                     <Form.Control
                         required
                         type="text"
@@ -85,7 +95,7 @@ export default function Contact({ onPageChange }) {
                         onChange={handleInputChange}
                     />
                 </Form.Group>
-                <Button variant="light" type="submit">
+                <Button variant="light" type="submit" value="Send" id='sendButton'>
                     Submit
                 </Button>
             </Form>
