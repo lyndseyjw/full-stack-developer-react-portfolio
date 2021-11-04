@@ -16,7 +16,7 @@ export default function workoutModal({ onHide, show }) {
             </Modal.Header>
             <Modal.Body>
                 <h4>Languages and Technologies</h4>
-                <p className="padding-top">HTML5, CSS, Javascript, RESTful API, Express, Node, Moongoose, MongoDB, Heroku </p>
+                <p className="padding-top">HTML5, CSS, JavaScript, RESTful APIs, Express.js, Node.js, Moongoose, MongoDB, Heroku </p>
                 <div className="flex">
                     <a href="https://dry-wildwood-23805.herokuapp.com/?id=616791de69fdd7001603dc9b" target="_blank" rel="noopener noreferrer" >
                         <i className="fa black">&#xf109;</i>

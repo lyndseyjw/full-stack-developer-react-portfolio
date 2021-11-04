@@ -4,6 +4,17 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
 
+const styles = {
+    message: {
+        visible: {
+            visibility: 'visible'
+        },
+        hidden: {
+            visibility: 'hidden'
+        }
+    }
+}
+
 export default function Contact({ onPageChange }) {
 
     const [name, setName] = useState('');
@@ -11,6 +22,8 @@ export default function Contact({ onPageChange }) {
     const [content, setContent] = useState('');
 
     const [validated, setValidated] = useState(false);
+
+    const [message, setMessage] = useState(false)
 
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
@@ -31,6 +44,7 @@ export default function Contact({ onPageChange }) {
     const form = useRef();
 
     const sendEmail = (e) => {
+        e.preventDefault();
 
         const form = e.currentTarget;
 
@@ -38,16 +52,18 @@ export default function Contact({ onPageChange }) {
             e.preventDefault();
             e.stopPropagation();
         } else {
-        
+            e.preventDefault();
             emailjs.sendForm('service_g7oc67p', 'template_bxsaoon', form.current, 'user_o4QGNHNr4dPElGw0IgZAC')
             .then((result) => {
-                console.log(result.text);
+                console.log(result.text)
+                setMessage(true);
             }, (error) => {
                 console.log(error.text);
             });
 
             e.preventDefault();
-            onPageChange("Home")
+            
+            onPageChange("Contact")
         }
         setValidated(true);  
     };
@@ -99,6 +115,9 @@ export default function Contact({ onPageChange }) {
                     Submit
                 </Button>
             </Form>
+            <div className='center padding-top'>
+                <p style={message? styles.message.visible : styles.message.hidden}>Message Sent!</p>
+            </div>
             <div className='center padding-top'>
                 <a href="mailto:lyndseyjwatson@gmail.com">lyndseyjwatson@gmail.com</a>
             </div>

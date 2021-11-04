@@ -16,7 +16,7 @@ export default function remindModal({ onHide, show }) {
             </Modal.Header>
             <Modal.Body>
                 <h4>Languages and Technologies</h4>
-                <p className="padding-top">React, Javascript, Moment.js, CSS, Bootstrap, JWT-Authentication, Node.js, Express, GraphQl, Mongoose, MongoDB, Heroku</p>
+                <p className="padding-top">React, JavaScript, Moment.js, CSS, Bootstrap, JWT-Authentication, Node.js, Express.js, GraphQl, Mongoose, MongoDB, Heroku</p>
                 <div className='flex'>
                     <a href="https://re-mind-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <i className="fa black">&#xf109;</i>

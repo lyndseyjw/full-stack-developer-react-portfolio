@@ -16,7 +16,7 @@ export default function parkSmartModal({ onHide, show }) {
             </Modal.Header>
             <Modal.Body>
                 <h4>Languages and Technologies</h4>
-                <p className="padding-top">Handlebars, Bootstrap, CSS, Javascript, Moment.js, Session-Cookie, RESTful API, Node, Express, Sequelize, mySQL, Heroku </p>
+                <p className="padding-top">Handlebars.js, Bootstrap, CSS, JavaScript, Moment.js, Session-Cookie, RESTful APIs, Node.js, Express.js, Sequelize, mySQL, Heroku </p>
                 <div className='flex'>
                     <a href="https://parksmart2021.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <i className="fa black">&#xf109;</i>

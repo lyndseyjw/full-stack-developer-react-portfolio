@@ -16,7 +16,7 @@ export default function employeeModal({ onHide, show }) {
             </Modal.Header>
             <Modal.Body>
                 <h4>Languages and Technologies</h4>
-                <p className="padding-top">Javascript, Node, Inquirer, Sequelize, mySQL </p>
+                <p className="padding-top">JavaScript, Node.js, Inquirer, Sequelize, mySQL </p>
                 <div className="flex">
                 <a href="https://drive.google.com/file/d/1Y8xz6AzSLeE4SS89jjYlznI2y-PvsYNw/view?usp=sharing" target="_blank" rel="noopener noreferrer" >
                         <i className="fa black">&#xf109;</i>
