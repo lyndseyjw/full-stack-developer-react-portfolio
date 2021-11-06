@@ -10,6 +10,7 @@ import moment from './assets/images/moment-js-logo.png';
 import rest from './assets/images/rest-api.png';
 import sequelize from './assets/images/sequelize.png';
 import jquery from './assets/images/jquery-icon.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const styles = {
     button: {
@@ -72,35 +73,35 @@ export default function About() {
                     Eager to apply my new skills in web development with a courageous group of individuals willing to break unprecedented ground in what technology could offer, if the right intentions were present, I am committed to a life of learning and will always provide ideas and work of the highest caliber.
 
                 </p>
-                <div className="margin-top column black">
-                    <div>
-                        <button style={hiddenButton? styles.button.hidden : styles.button.visible} className="tech" onClick={handleStyle}>Technology and Language Skills</button>
+            </div>
+            <div className="column black container">
+                <div className="overlay">
+                    <button style={hiddenButton? styles.button.hidden : styles.button.visible} className="tech" onClick={handleStyle}>Technology and Language Skills</button>
+                </div>
+                <div className="bottom">
+                    <div className="between transition row">
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-react transition icon col-4 col-md-1" data-react></i>
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-js-square  transition icon col-4 col-md-1"></i>
+                        <img src={express} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-node  transition icon col-4 col-md-1"></i>
+                        <img src={jwt} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
+                        <img src={graphql} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
+                        <img src={mongo} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
                     </div>
-                    <div className="between transition">
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-react transition icon" data-react></i>
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-js-square margin-left transition icon"></i>
-                        <img src={express} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-node margin-left transition icon"></i>
-                        <img src={jwt} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                        <img src={graphql} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                        <img src={mongo} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
+                    <div className="padding-top between transition row">
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-html5 transition icon col-4 col-md-1"></i>
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-css3  transition icon col-4 col-md-1"></i>
+                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-bootstrap  transition icon col-4 col-md-1"></i>
+                        <img src={jquery} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
+                        <img src={moment} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
                     </div>
-                    <div className="padding-top between transition">
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-html5 transition icon"></i>
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-css3 margin-left transition icon"></i>
-                        <i style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="fab fa-bootstrap margin-left transition icon"></i>
-                        <img src={jquery} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                        <img src={moment} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                    </div>
-                    <div className="padding-top between transition">
-                        <img src={handlebars} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className='transition'></img>
-                        <img src={rest} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
-                        <img src={sequelize} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className="margin-left transition image"></img>
+                    <div className="padding-top between transition row">
+                        <img src={handlebars} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className='transition col-4 col-md-1'></img>
+                        <img src={rest} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
+                        <img src={sequelize} style={visibleIcons? styles.icons.visible : styles.icons.hidden} className=" transition image col-4 col-md-1"></img>
                     </div>
                 </div>
-            
             </div>
-
         </section>
     )
 }

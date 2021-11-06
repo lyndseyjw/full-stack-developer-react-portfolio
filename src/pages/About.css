@@ -1,6 +1,5 @@
 section {
 
-    padding-top: 50px;
     display: block;
   
 }
@@ -9,28 +8,15 @@ section {
 
     width: 100%;
     background-color: #ffc7e2;
+    padding-top: 250px;
 
 }
 
 /* centering both containers of about me section */
 #about-me div {
 
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
-
-}
-
-/* create space between hero image & about me first container */
-/* #about-me-div1 {
-
-    padding-top: 150px;
-
-} */
-
-/* create space between about me heading & image */
-.beach {
-
-    padding-top: 40px;
 
 }
 
@@ -55,6 +41,7 @@ section {
 /* style & spacing of paragraphs within sectond about me container */
 #about-me-div2 {
 
+    margin: auto;
     padding-top: 55px;
     color: #194f96;
     font-size: 20px;
@@ -110,11 +97,12 @@ section {
     transition: all 2s ease-in;
 }
 
-.margin-left {
-    margin-left: 40px;
+.icon {
+    padding: 15px;
 }
 
 .image {
+    /* margin: auto; */
     object-fit: contain;
     width: 80px;
     height: 80px;
@@ -128,6 +116,33 @@ section {
     padding-top: 50px;
 }
 
-/* .black {
-    color: black;
-} */
+.container {
+
+    margin: 0;
+    position: relative;
+}
+
+.bottom {
+    padding-bottom: 75px;
+}
+
+.row {
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 375px) {
+
+    #about-me {
+        padding-top: 75px;
+    } 
+    
+    .row {
+        --bs-gutter-x: 0;
+    }
+}

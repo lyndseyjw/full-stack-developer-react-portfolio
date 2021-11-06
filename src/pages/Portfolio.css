@@ -1,5 +1,6 @@
 #work {
-    background-image: url('./assets/images/triangle-mosaic.png')
+    background-image: url('./assets/images/triangle-mosaic.png');
+    padding-top: 200px;
 }
 
 #wrapper{
@@ -88,4 +89,26 @@
 
 .black:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 375px) {
+
+    #work {
+        padding-top: 40px;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-left: 10px;
+        width: 360px;
+        height: 260px;
+    }
+
+    .image-container img{
+        width: 360px;
+        height: 260px;
+    }
 }

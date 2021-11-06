@@ -116,9 +116,6 @@ export default function Contact({ onPageChange }) {
                 </Button>
             </Form>
             <div className='center padding-top'>
-                <p style={message? styles.message.visible : styles.message.hidden}>Message Sent!</p>
-            </div>
-            <div className='center padding-top'>
                 <a href="mailto:lyndseyjwatson@gmail.com">lyndseyjwatson@gmail.com</a>
             </div>
             <div className='center padding-top margin-bottom'>

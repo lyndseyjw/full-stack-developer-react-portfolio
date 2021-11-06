@@ -63,3 +63,22 @@ header nav a:hover {
     color: white;
 
 }
+
+@media screen and (max-width: 1250px) {
+
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 772px) {
+
+    /* this is where we need a dropdown navbar menu */
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        position: relative;
+    }
+}
