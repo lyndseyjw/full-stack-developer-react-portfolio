@@ -111,4 +111,8 @@
         width: 360px;
         height: 260px;
     }
+
+    .image-caption {
+        margin-top: 0px;
+    }
 }
