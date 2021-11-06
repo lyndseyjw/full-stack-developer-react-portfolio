@@ -115,4 +115,8 @@
     .image-caption {
         margin-top: 0px;
     }
+
+    .image-caption h1{
+        padding:20px 0px 5px 0px;
+    }
 }
