@@ -64,6 +64,10 @@ header nav a:hover {
 
 }
 
+nav select, #sendButton {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1250px) {
 
     header {
@@ -73,7 +77,25 @@ header nav a:hover {
 
 @media screen and (max-width: 772px) {
 
-    /* this is where we need a dropdown navbar menu */
+    nav ul { 
+        visibility: hidden; 
+        position: absolute;
+    }
+    nav select { 
+        visibility: visible;
+        display: inline-block; 
+        margin-top: 40px;
+        padding: 15px;
+        background-color: silver;
+        border-radius: 5px;
+    }
+    #sendButton {
+        visibility: visible;
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width: 375px) {

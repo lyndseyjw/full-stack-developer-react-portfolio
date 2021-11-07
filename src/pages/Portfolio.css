@@ -57,7 +57,7 @@
 }
 
 .image-caption p{
-    padding-top: 10px;
+    padding-top: 5px;
     text-align:center; 
     font-family: 'Overpass Mono', monospace;
     color:#fff;
@@ -89,6 +89,76 @@
 
 .black:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1263px) {
+    #wrapper {
+        width:70%;
+    }
+
+    .image-container{
+        width:350px;
+        height:250px;
+    }
+
+    .image-container img{
+        width:350px;
+        height:250px;
+    }
+
+    .image-caption h1{
+        padding:15px 0px 5px 0px;
+    }
+
+    .image-caption p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1013px) {
+    #wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #wrapper {
+        width: 60%;
+    }
+
+    .image-container{
+        width:450px;
+        height:350px;
+    }
+
+    .image-container img{
+        width:450px;
+        height:350px;
+    }
+
+    .image-caption h1{
+        padding:15px 5px 5px 5px;
+    }
+
+    .image-caption p{
+        padding: 5px 5px 5px 5px;
+    }
+
+    #work {
+        padding-top: 300px;
+    }
 }
 
 @media screen and (max-width: 375px) {

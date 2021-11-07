@@ -1,67 +1,39 @@
-import React from 'react';
-// import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap'
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './NavTabs.css';
-import resume from "../pages/assets/files/resume.pdf"
+import resume from "../pages/assets/files/resume.pdf";
+import Button from 'react-bootstrap/Button';
 
 function NavTabs({ currentPage, handlePageChange }) {
+
+    const [page, setPage] = useState('Home');
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { target } = e;
+        const inputValue = target.value;
+
+        // Based on the input type, we set the state of either email, username, and password
+        if (inputValue === 'Home') {
+            setPage(inputValue);
+        } else if (inputValue === 'About') {
+            setPage(inputValue);
+        } else if (inputValue === 'Portfolio') {
+            setPage(inputValue);
+        } else if (inputValue === 'Contact') {
+            setPage(inputValue);
+        } else {
+            setPage(inputValue);
+        }
+    };
+
+    // const handleChange = ({page}) => {
+    //     handlePageChange(page);
+    // }
+
     return (
         <header>
             <h1>LYNDSEY WATSON</h1>
-            {/* <Navbar bg="light" expand={false}>
-                <Container fluid>
-                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                    <Navbar.Offcanvas
-                        id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel"
-                        placement="end"
-                    >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">Welcome to my Portfolio</Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link
-                                    href="#home"
-                                    onClick={() => handlePageChange('Home')}
-                                    className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-                                >
-                                    HOME
-                                </Nav.Link>
-                                <Nav.Link
-                                    href="#about"
-                                    onClick={() => handlePageChange('About')}
-                                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                                >
-                                    ABOUT
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="#portfolio"
-                                    onClick={() => handlePageChange('Portfolio')}
-                                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                                >
-                                    PORTFOLIO
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href="#contact"
-                                    onClick={() => handlePageChange('Contact')}
-                                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                                >
-                                    CONTACT
-                                </Nav.Link>
-                                <Nav.Link 
-                                    href={resume}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='nav-link'
-                                >
-                                    RESUME
-                                </Nav.Link>
-                            </Nav>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
-                </Container>
-            </Navbar> */}
             <nav>
                 <ul className="nav nav-tabs">
                     <li className="nav-item">
@@ -111,6 +83,41 @@ function NavTabs({ currentPage, handlePageChange }) {
                         </a>
                     </li>
                 </ul>
+                <select onChange={handleInputChange}>
+                    <option value="" selected="selected">*</option>
+
+                    <option 
+                        value="Home"
+                    >
+                        HOME
+                    </option>
+                    <option 
+                        value="About"
+                    >
+                        ABOUT
+                    </option>
+                    <option 
+                        value="Portfolio"
+                    >
+                        PORTFOLIO
+                    </option>
+                    <option 
+                        value="Contact"
+                    >
+                        CONTACT
+                    </option>
+                    <option 
+                        value={resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='nav-link'
+                    >
+                        RESUME
+                    </option>
+                </select>
+                <Button variant="light" id='sendButton' onClick={() => handlePageChange({page})}>
+                    Visit
+                </Button>
             </nav>
         </header>
     );

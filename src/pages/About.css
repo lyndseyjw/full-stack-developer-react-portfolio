@@ -134,6 +134,7 @@ section {
 .overlay {
     position: absolute;
     top: 0;
+    left: 25%;
 }
 
 @media screen and (max-width: 375px) {
