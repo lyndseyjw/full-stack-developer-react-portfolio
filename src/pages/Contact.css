@@ -5,11 +5,12 @@ section {
 
 #contact {
 
-    background-color: #ffc7e2;
+    /* background-color: #ffc7e2; */
+    background-image: url('./assets/images/beige-tiles.png');
     color: #0c4107;
     width: 100%;
     height: auto;
-    padding-top: 225px;
+    padding-top: 250px;
 }
 
 /* style & spacing of contact heading */
@@ -48,6 +49,12 @@ p {
 
 .margin-bottom {
     padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1250px) {
+    #contact {
+        padding-top: 300px;
+    }
 }
 
 @media screen and (max-width: 375px) {

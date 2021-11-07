@@ -64,7 +64,7 @@ header nav a:hover {
 
 }
 
-nav select, #sendButton {
+nav select, #visitButton {
     visibility: hidden;
 }
 
@@ -89,7 +89,7 @@ nav select, #sendButton {
         background-color: silver;
         border-radius: 5px;
     }
-    #sendButton {
+    #visitButton {
         visibility: visible;
         display: block;
         margin: 20px auto;

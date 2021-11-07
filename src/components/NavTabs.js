@@ -115,7 +115,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                         RESUME
                     </option>
                 </select>
-                <Button variant="light" id='sendButton' onClick={() => handlePageChange({page})}>
+                <Button variant="light" id='visitButton' onClick={() => handlePageChange({page})}>
                     Visit
                 </Button>
             </nav>
