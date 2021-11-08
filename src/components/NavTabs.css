@@ -89,13 +89,6 @@ header nav a:hover {
         background-color: silver;
         border-radius: 5px;
     }
-    /* #visitButton {
-        visibility: visible;
-        display: block;
-        margin: 20px auto;
-        padding: 10px;
-        border-radius: 5px;
-    } */
 }
 
 @media screen and (max-width: 375px) {
