@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/full-stack-developer-react-portfolio/static/css/main.922ee89d.chunk.css",
+    "main.css": "/full-stack-developer-react-portfolio/static/css/main.400054eb.chunk.css",
     "main.js": "/full-stack-developer-react-portfolio/static/js/main.22e01580.chunk.js",
     "main.js.map": "/full-stack-developer-react-portfolio/static/js/main.22e01580.chunk.js.map",
     "runtime-main.js": "/full-stack-developer-react-portfolio/static/js/runtime-main.bbcfc8f8.js",
@@ -12,7 +12,7 @@
     "static/js/3.97aa63a9.chunk.js.map": "/full-stack-developer-react-portfolio/static/js/3.97aa63a9.chunk.js.map",
     "index.html": "/full-stack-developer-react-portfolio/index.html",
     "static/css/2.c1256375.chunk.css.map": "/full-stack-developer-react-portfolio/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.922ee89d.chunk.css.map": "/full-stack-developer-react-portfolio/static/css/main.922ee89d.chunk.css.map",
+    "static/css/main.400054eb.chunk.css.map": "/full-stack-developer-react-portfolio/static/css/main.400054eb.chunk.css.map",
     "static/js/2.d38f23a5.chunk.js.LICENSE.txt": "/full-stack-developer-react-portfolio/static/js/2.d38f23a5.chunk.js.LICENSE.txt",
     "static/media/about-me-photo.c1a3f0f7.JPG": "/full-stack-developer-react-portfolio/static/media/about-me-photo.c1a3f0f7.JPG",
     "static/media/add-role.0d5a8d46.png": "/full-stack-developer-react-portfolio/static/media/add-role.0d5a8d46.png",
@@ -35,7 +35,7 @@
     "static/js/runtime-main.bbcfc8f8.js",
     "static/css/2.c1256375.chunk.css",
     "static/js/2.d38f23a5.chunk.js",
-    "static/css/main.922ee89d.chunk.css",
+    "static/css/main.400054eb.chunk.css",
     "static/js/main.22e01580.chunk.js"
   ]
 }

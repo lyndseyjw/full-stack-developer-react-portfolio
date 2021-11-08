@@ -143,6 +143,13 @@ section {
         padding-top: 75px;
     } 
 
+    .beach {
+
+        filter: none;
+        -webkit-filter: none;
+    
+    }
+
     .beach:hover {
 
         transform: none;
