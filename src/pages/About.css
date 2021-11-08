@@ -142,8 +142,18 @@ section {
     #about-me {
         padding-top: 75px;
     } 
+
+    .beach:hover {
+
+        transform: scale(0);
+    
+    }
     
     .row {
         --bs-gutter-x: 0;
+    }
+
+    .overlay {
+        left: 0;
     }
 }
