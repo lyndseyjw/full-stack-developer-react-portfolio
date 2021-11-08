@@ -64,7 +64,7 @@ header nav a:hover {
 
 }
 
-nav select, #visitButton {
+#dropdown {
     visibility: hidden;
 }
 
@@ -81,7 +81,7 @@ nav select, #visitButton {
         visibility: hidden; 
         position: absolute;
     }
-    nav select { 
+    #dropdown { 
         visibility: visible;
         display: inline-block; 
         margin-top: 40px;
@@ -89,13 +89,13 @@ nav select, #visitButton {
         background-color: silver;
         border-radius: 5px;
     }
-    #visitButton {
+    /* #visitButton {
         visibility: visible;
         display: block;
         margin: 20px auto;
         padding: 10px;
         border-radius: 5px;
-    }
+    } */
 }
 
 @media screen and (max-width: 375px) {

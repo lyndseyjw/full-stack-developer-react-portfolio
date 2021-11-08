@@ -1,35 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './NavTabs.css';
 import resume from "../pages/assets/files/resume.pdf";
-import Button from 'react-bootstrap/Button';
+import { DropdownButton, Dropdown } from 'react-bootstrap'
 
-function NavTabs({ currentPage, handlePageChange }) {
-
-    const [page, setPage] = useState('Home');
-
-    const handleInputChange = (e) => {
-        // Getting the value and name of the input which triggered the change
-        const { target } = e;
-        const inputValue = target.value;
-
-        // Based on the input type, we set the state of either email, username, and password
-        if (inputValue === 'Home') {
-            setPage(inputValue);
-        } else if (inputValue === 'About') {
-            setPage(inputValue);
-        } else if (inputValue === 'Portfolio') {
-            setPage(inputValue);
-        } else if (inputValue === 'Contact') {
-            setPage(inputValue);
-        } else {
-            setPage(inputValue);
-        }
-    };
-
-    // const handleChange = ({page}) => {
-    //     handlePageChange(page);
-    // }
+function NavTabs({ currentPage, handlePageChange, pageTab, setPageTab}) {
 
     return (
         <header>
@@ -83,41 +58,40 @@ function NavTabs({ currentPage, handlePageChange }) {
                         </a>
                     </li>
                 </ul>
-                <select onChange={handleInputChange}>
-                    <option value="" selected="selected">*</option>
-
-                    <option 
-                        value="Home"
+                <DropdownButton id="dropdown" title={pageTab} variant="light">
+                    <Dropdown.Item 
+                        href="#home"
+                        onClick={() => { handlePageChange('Home'); setPageTab('Home')}}
                     >
                         HOME
-                    </option>
-                    <option 
-                        value="About"
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        href="#about"
+                        onClick={() => { handlePageChange('About'); setPageTab('About')}}
                     >
                         ABOUT
-                    </option>
-                    <option 
-                        value="Portfolio"
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        href="#portfolio"
+                        onClick={() => { handlePageChange('Portfolio'); setPageTab('Portfolio')}}
                     >
                         PORTFOLIO
-                    </option>
-                    <option 
-                        value="Contact"
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        href="#contact"
+                        onClick={() => { handlePageChange('Contact'); setPageTab('Contact')}}
                     >
                         CONTACT
-                    </option>
-                    <option 
-                        value={resume}
+                    </Dropdown.Item>
+                    <Dropdown.Item 
+                        href={resume}
                         target="_blank"
                         rel="noopener noreferrer"
                         className='nav-link'
                     >
                         RESUME
-                    </option>
-                </select>
-                <Button variant="light" id='visitButton' onClick={() => handlePageChange({page})}>
-                    Visit
-                </Button>
+                    </Dropdown.Item>
+                </DropdownButton>
             </nav>
         </header>
     );

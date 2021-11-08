@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
 
+  const [pageTab, setPageTab] = useState('Home');
 
   const renderPage = () => {
     if (currentPage === 'Home') {
@@ -21,14 +22,16 @@ function App() {
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }
-    return <Contact onPageChange={handlePageChange}/>;
+    if (currentPage === 'Contact') {
+      return <Contact onPageChange={handlePageChange}/>;
+    }
   };
   
   const handlePageChange = (page) => setCurrentPage(page);
   
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} pageTab={pageTab} setPageTab={setPageTab}/>
       {renderPage()}
       <Footer />
     </div>
