@@ -145,7 +145,7 @@ section {
 
     .beach:hover {
 
-        transform: scale(0);
+        transform: none;
     
     }
     
