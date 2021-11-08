@@ -13,7 +13,7 @@ section {
     display: block;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     .hero {
         background-attachment: scroll;
     }

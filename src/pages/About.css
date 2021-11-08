@@ -137,7 +137,7 @@ section {
     left: 25%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
 
     #about-me {
         padding-top: 75px;
